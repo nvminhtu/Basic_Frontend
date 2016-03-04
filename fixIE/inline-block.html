@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Document</title>
+</head>
+<style type="text/css">
+  code {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    background: #f0f0f0;
+  }
+  .header .navigation li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+</style>
+<body>
+  <h1>Fix the IE7 and inline-block CSS BUG</h1>
+  <div class="header">
+    <ul class="navigation">
+      <li>Home</li>
+      <li>Line Up</li>
+      <li>Collection</li>
+      <li>News</li>
+      <li>Contact</li>
+    </ul>
+  <!-- /.header --></div>
+  <h2>Original CSS:</h2>
+  <code>
+    .header .navigation li {</br>
+      display: inline-block;</br>
+    }
+  </code>
+  <h2>Fixed CSS:</h2>
+  <code>
+   .header .navigation li {</br>
+      display: inline-block;</br>
+      zoom: 1;</br>
+      *display: inline;</br>
+    }
+  </code>
+</body>
+</html>
